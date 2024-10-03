@@ -43,8 +43,3 @@ def aplicar_estilos(root):
     return (entrada_funcion, entrada_p0, entrada_tolerancia, 
             entrada_iteraciones, botonCalcularNewton, botonCalcularSecante)
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    root = tk.Tk()
-    aplicar_estilos(root)
-    root.mainloop()

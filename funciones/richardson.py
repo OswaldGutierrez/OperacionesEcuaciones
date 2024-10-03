@@ -6,12 +6,12 @@ import sympy as sp  # Importar sympy para calcular derivadas
 
 # Añade el directorio raíz ('Ecuaciones') a las rutas de búsqueda de Python
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from Styles import styleNewton  # Importa tu archivo de estilos
+from Styles import styleRichardson  # Importa tu archivo de estilos
 
 class Richardson:
     def __init__(self):
         self.root = tk.Tk()  # Crea la ventana principal
-        styleNewton.aplicar_estilos(self.root)  # Aplica el estilo de styleRichardson
+        styleRichardson.aplicar_estilos(self.root)  # Aplica el estilo de styleRichardson
 
         # Configura la interfaz gráfica
         self.crear_interfaz()
