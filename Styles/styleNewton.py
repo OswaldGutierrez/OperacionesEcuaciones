@@ -5,7 +5,7 @@ def aplicar_estilos(root):
     root.title("Método Newton")
     
     # Hacer que la ventana sea responsiva
-    root.rowconfigure([0, 1, 2, 3, 4], weight=1)
+    root.rowconfigure([0, 1, 2, 3, 4, 5], weight=1)  # Agregar una fila más
     root.columnconfigure([0, 1], weight=1)
 
     # Etiquetas
@@ -34,10 +34,14 @@ def aplicar_estilos(root):
     entrada_iteraciones = tk.Entry(root)
     entrada_iteraciones.grid(row=3, column=1, padx=10, pady=10)
 
-    botonCalcularNewton = tk.Button(root, text="Calcular")
+    botonCalcularNewton = tk.Button(root, text="Calcular Newton")
     botonCalcularNewton.grid(row=4, column=1, padx=10, pady=10)
 
-    return entrada_funcion, entrada_p0, entrada_tolerancia, entrada_iteraciones, botonCalcularNewton
+    botonCalcularSecante = tk.Button(root, text="Calcular Secante")
+    botonCalcularSecante.grid(row=5, column=1, padx=10, pady=10)  # Agregar botón de secante
+
+    return (entrada_funcion, entrada_p0, entrada_tolerancia, 
+            entrada_iteraciones, botonCalcularNewton, botonCalcularSecante)
 
 # Ejemplo de uso
 if __name__ == "__main__":
