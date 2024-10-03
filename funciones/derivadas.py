@@ -25,7 +25,13 @@ class Derivadas:
 
     def procesar_funcion(self, funcion):
         """Reemplaza nombres comunes en la función ingresada con funciones válidas de Python."""
+        # Cambia 'lnx' a 'math.log(x)' y 'cosx' a 'math.cos(x)'
         funcion = funcion.replace("lnx", "math.log(x)")
+        funcion = funcion.replace("cosx", "math.cos(x)")
+        funcion = funcion.replace("sinx", "math.sin(x)")
+        funcion = funcion.replace("tanx", "math.tan(x)")
+        funcion = funcion.replace("exp", "math.exp")
+        funcion = funcion.replace("sqrt", "math.sqrt")
         return funcion
 
     def f(self, funcion, x):
