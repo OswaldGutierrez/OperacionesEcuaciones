@@ -9,6 +9,10 @@ def abrirRichardson():
     subprocess.Popen(["python", "derivadas.py"])
     botonRichardon.config(state=tk.DISABLED)
     
+def abrirNewton():
+    subprocess.Popen(["python", "newton.py"])
+    botonNewton.config(state=tk.DISABLED)
+    
 def abrirSecante():
     subprocess.Popen(["python", "derivadas.py"])
     botonSecante.config(state=tk.DISABLED)
@@ -42,6 +46,10 @@ botonDerivadas.pack(pady=20)
 # Botón para Extrapolación de Richardson
 botonRichardon = tk.Button(frame, text="Extrapolación de Richardson", font=("Helvetica", 16), bg="#ADD8E6", relief="raised", padx=10, pady=5)
 botonRichardon.pack(pady=20)
+
+# Botón para Extrapolación de Richardson
+botonNewton = tk.Button(frame, text="Newton", font=("Helvetica", 16), bg="#ADD8E6", relief="raised", padx=10, pady=5)
+botonNewton.pack(pady=20)
 
 # Botón para Secantes
 botonSecante = tk.Button(frame, text="Secantes", font=("Helvetica", 16), bg="#ADD8E6", relief="raised", padx=10, pady=5)
