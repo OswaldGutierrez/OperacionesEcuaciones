@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def aplicar_estilos(root):
+def aplicarEstilosNewton(root):
     """Aplica los estilos básicos a la ventana principal y retorna los widgets necesarios"""
     root.title("Método Newton")
     
@@ -9,30 +9,30 @@ def aplicar_estilos(root):
     root.columnconfigure([0, 1], weight=1)
 
     # Etiquetas
-    etiqueta_funcion = tk.Label(root, text="Por favor ingresa tu función f(x)=")
-    etiqueta_funcion.grid(row=0, column=0, padx=10, pady=10)
+    etiquetaFuncion = tk.Label(root, text="Por favor ingresa tu función f(x)=")
+    etiquetaFuncion.grid(row=0, column=0, padx=10, pady=10)
 
     etiqueta_p0 = tk.Label(root, text="Ingresa el valor de p0:")
     etiqueta_p0.grid(row=1, column=0, padx=10, pady=10)
 
-    etiqueta_tolerancia = tk.Label(root, text="Ingresa el valor de tolerancia:")
-    etiqueta_tolerancia.grid(row=2, column=0, padx=10, pady=10)
+    etiquetaTolerancia = tk.Label(root, text="Ingresa el valor de tolerancia:")
+    etiquetaTolerancia.grid(row=2, column=0, padx=10, pady=10)
 
-    etiqueta_iteraciones = tk.Label(root, text="Ingresa el valor de iteraciones máximas:")
-    etiqueta_iteraciones.grid(row=3, column=0, padx=10, pady=10)
+    etiquetaIteraciones = tk.Label(root, text="Ingresa el valor de iteraciones máximas:")
+    etiquetaIteraciones.grid(row=3, column=0, padx=10, pady=10)
 
     # Entradas
-    entrada_funcion = tk.Entry(root)
-    entrada_funcion.grid(row=0, column=1, padx=10, pady=10)
+    entradaFuncion = tk.Entry(root)
+    entradaFuncion.grid(row=0, column=1, padx=10, pady=10)
 
     entrada_p0 = tk.Entry(root)
     entrada_p0.grid(row=1, column=1, padx=10, pady=10)
 
-    entrada_tolerancia = tk.Entry(root)
-    entrada_tolerancia.grid(row=2, column=1, padx=10, pady=10)
+    entradaTolerancia = tk.Entry(root)
+    entradaTolerancia.grid(row=2, column=1, padx=10, pady=10)
 
-    entrada_iteraciones = tk.Entry(root)
-    entrada_iteraciones.grid(row=3, column=1, padx=10, pady=10)
+    entradaIteraciones = tk.Entry(root)
+    entradaIteraciones.grid(row=3, column=1, padx=10, pady=10)
 
     botonCalcularNewton = tk.Button(root, text="Calcular Newton")
     botonCalcularNewton.grid(row=4, column=1, padx=10, pady=10)
@@ -40,6 +40,6 @@ def aplicar_estilos(root):
     botonCalcularSecante = tk.Button(root, text="Calcular Secante")
     botonCalcularSecante.grid(row=5, column=1, padx=10, pady=10)  # Agregar botón de secante
 
-    return (entrada_funcion, entrada_p0, entrada_tolerancia, 
-            entrada_iteraciones, botonCalcularNewton, botonCalcularSecante)
+    return (entradaFuncion, entrada_p0, entradaTolerancia, 
+            entradaIteraciones, botonCalcularNewton, botonCalcularSecante)
 

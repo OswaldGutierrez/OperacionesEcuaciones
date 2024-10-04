@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def aplicar_estilos(root):
+def aplicarEstiloDerivadas(root):
     """Aplica los estilos básicos a la ventana principal y retorna los widgets necesarios"""
     root.title("Realiza tus derivadas")
     
@@ -10,18 +10,18 @@ def aplicar_estilos(root):
     root.rowconfigure(1, weight=1)
 
     # Etiquetas
-    etiqueta_funcion = tk.Label(root, text="Por favor ingresa tu función f(x)=")
-    etiqueta_funcion.grid(row=0, column=0, padx=10, pady=10)
+    etiquetaFuncion = tk.Label(root, text="Por favor ingresa tu función f(x)=")
+    etiquetaFuncion.grid(row=0, column=0, padx=10, pady=10)
 
-    etiqueta_x0 = tk.Label(root, text="Ingresa el valor de x0:")
-    etiqueta_x0.grid(row=1, column=0, padx=10, pady=10)
+    etiquetax0 = tk.Label(root, text="Ingresa el valor de x0:")
+    etiquetax0.grid(row=1, column=0, padx=10, pady=10)
 
     # Entradas
-    entrada_funcion = tk.Entry(root)
-    entrada_funcion.grid(row=0, column=1, padx=10, pady=10)
+    entradaFuncion = tk.Entry(root)
+    entradaFuncion.grid(row=0, column=1, padx=10, pady=10)
 
-    entrada_x0 = tk.Entry(root)
-    entrada_x0.grid(row=1, column=1, padx=10, pady=10)
+    entradax0 = tk.Entry(root)
+    entradax0.grid(row=1, column=1, padx=10, pady=10)
 
     # Botones para calcular la derivada con diferentes métodos
     botonCalcular2 = tk.Button(root, text="Calcular para 2 puntos")
@@ -33,4 +33,4 @@ def aplicar_estilos(root):
     botonCalcular5 = tk.Button(root, text="Calcular para 5 puntos")
     botonCalcular5.grid(row=2, column=2, padx=10, pady=10)
 
-    return entrada_funcion, entrada_x0, botonCalcular2, botonCalcular3, botonCalcular5
+    return entradaFuncion, entradax0, botonCalcular2, botonCalcular3, botonCalcular5

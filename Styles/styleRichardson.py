@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def aplicar_estilos(root):
+def aplicarEstilosRichardson(root):
     """Aplica los estilos básicos a la ventana principal y retorna los widgets necesarios"""
     root.title("Extrapolación de Richardson")
     
@@ -9,8 +9,8 @@ def aplicar_estilos(root):
     root.columnconfigure([0, 1], weight=1)
 
     # Etiquetas
-    etiqueta_funcion = tk.Label(root, text="Ingresa la función f(x):")
-    etiqueta_funcion.grid(row=0, column=0, padx=10, pady=10)
+    etiquetaFuncion = tk.Label(root, text="Ingresa la función f(x):")
+    etiquetaFuncion.grid(row=0, column=0, padx=10, pady=10)
 
     etiqueta_x = tk.Label(root, text="Ingresa el valor de x:")
     etiqueta_x.grid(row=1, column=0, padx=10, pady=10)
@@ -28,26 +28,26 @@ def aplicar_estilos(root):
     etiqueta_q.grid(row=5, column=0, padx=10, pady=10)
 
     # Entradas
-    entrada_funcion = tk.Entry(root)
-    entrada_funcion.grid(row=0, column=1, padx=10, pady=10)
+    entradaFuncion = tk.Entry(root)
+    entradaFuncion.grid(row=0, column=1, padx=10, pady=10)
 
-    entrada_x = tk.Entry(root)
-    entrada_x.grid(row=1, column=1, padx=10, pady=10)
+    entradaX = tk.Entry(root)
+    entradaX.grid(row=1, column=1, padx=10, pady=10)
 
-    entrada_p = tk.Entry(root)
-    entrada_p.grid(row=2, column=1, padx=10, pady=10)
+    entradaP = tk.Entry(root)
+    entradaP.grid(row=2, column=1, padx=10, pady=10)
 
-    entrada_r = tk.Entry(root)
-    entrada_r.grid(row=3, column=1, padx=10, pady=10)
+    entradaR = tk.Entry(root)
+    entradaR.grid(row=3, column=1, padx=10, pady=10)
 
-    entrada_h = tk.Entry(root)
-    entrada_h.grid(row=4, column=1, padx=10, pady=10)
+    entradaH = tk.Entry(root)
+    entradaH.grid(row=4, column=1, padx=10, pady=10)
 
-    entrada_q = tk.Entry(root)
-    entrada_q.grid(row=5, column=1, padx=10, pady=10)
+    entradaQ = tk.Entry(root)
+    entradaQ.grid(row=5, column=1, padx=10, pady=10)
 
     botonRichardson = tk.Button(root, text="Mejorar la precisión")
     botonRichardson.grid(row=6, column=1, padx=10, pady=10)
 
-    return (entrada_funcion, entrada_x, entrada_p, entrada_r, entrada_h, entrada_q, botonRichardson)
+    return (entradaFuncion, entradaX, entradaP, entradaR, entradaH, entradaQ, botonRichardson)
 

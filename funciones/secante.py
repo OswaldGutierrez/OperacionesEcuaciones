@@ -30,7 +30,7 @@ class Secante:
         
         return None  # No se encontró la raíz en el número de iteraciones especificado
 
-def mostrar_resultado_secante(funcion, p0, p1, tolerancia, max_iteraciones):
+def mostrarResultadoSecante(funcion, p0, p1, tolerancia, max_iteraciones):
     secante = Secante(funcion, p0, p1, tolerancia, max_iteraciones)
     resultado = secante.calcular()
     
@@ -47,4 +47,4 @@ if __name__ == "__main__":
     tolerancia = 0.01  # Tolerancia
     max_iteraciones = 100  # Iteraciones máximas
 
-    print(mostrar_resultado_secante(funcion, p0, p1, tolerancia, max_iteraciones))
+    print(mostrarResultadoSecante(funcion, p0, p1, tolerancia, max_iteraciones))
